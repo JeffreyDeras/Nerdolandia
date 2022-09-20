@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+</head>
+<style>
+    html{
+        background-color: #f9e620;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        margin-top: 280px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .eye {
+        width: 150px;
+        height: 150px;
+        background: black;
+        border-radius: 50%;
+        position: relative;
+    }
+    .container-eyes{
+        display: flex;
+        align-items: flex-end;
+        width: 600px;
+        justify-content: space-between;
+    }
+    .nose {
+        width: 45px;
+        height: 18px;
+        background-color: black;
+        border-radius: 13px;
+    }
+    .light{
+        position: absolute;
+        width: 62px;
+        height: 62px;
+        background: white;
+        border-radius: 50%;
+    }
+    .left>.light{
+        right: 24px;
+        top: 20px;
+    }
+    .right>.light{
+        left: 24px;
+        top: 20px;
+    }
+    .container-mouth{
+        display: flex;
+        margin-top: 63px;
+        position: relative;
+    }
+    .lips{
+        width: 108px;
+        height: 50px;
+        border: 10px solid;
+        border-radius: 45%;
+        border-left: unset;
+        border-right: unset;
+        border-top: unset;
+        position: relative;
+    }
+    .center-lips{
+        width: 25px;
+        height: 25px;
+        border: 6px solid;
+        transform: rotate(30deg);
+        position: relative;
+        top: 5px;
+        left: 10px;
+        border-bottom: 28px solid;
+        border-left: 19px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: unset;
+    }
+    .right-lips{
+        transform: rotate(
+        358deg
+        );
+        right: 11px;
+        bottom: 5px;
+    }
+    .left-lips{
+        transform: rotate(358deg);
+        left: 18px;
+        bottom: 4px;
+    }
+    .left-tape{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 35.1%;
+        transform: rotate(33deg);
+        top: 9px;
+        border-bottom: 35px solid #f9e620;
+        border-left: 19px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: unset;
+    }
+    .right-tape{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 32.1%;
+        transform: rotate(31deg);
+        top: 11px;
+        border-bottom: 35px solid #f9e620;
+        border-left: 12px solid transparent;
+        border-right: 19px solid transparent;
+        border-top: unset;
+    }
+    .top-tape-left{
+        position: absolute;
+        border: 5px solid #f9e620;
+        width: 10px;
+        right: 51%;
+        transform: rotate(335deg);
+        top: 24px;
+    }
+    .top-tape-right{
+        position: absolute;
+        border: 5px solid #f9e620;
+        width: 10px;
+        right: 39%;
+        transform: rotate(29deg);
+        top: 25px;
+    }
+    .container-cheeks{
+        display: flex;
+    }
+    .cheek {
+        width: 130px;
+        height: 130px;
+        background: #ef1f2d;
+        border-radius: 50%;
+        position: relative;
+        top: 88px;
+        margin: 0 101px;
+    }
+</style>
+<body>
+    <div class="container-eyes">
+        <div class="eye left">
+            <div class="light"></div>
+        </div>
+        <div class="nose"></div>
+        <div class="eye right">
+            <div class="light"></div>
+        </div>
+    </div>
+    <div class="container-cheeks">
+        <div class="cheek"></div>
+
+        <div class="container-mouth">
+            <div class="lips left-lips"></div>
+            <div class="center-lips"></div>
+            <div class="lips right-lips"></div>
+            <div class="left-tape"></div>
+            <div class="right-tape"></div>
+            <div class="top-tape-left"></div>
+            <div class="top-tape-right"></div>
+        </div>
+        <div class="cheek"></div>
+    </div>
+</body>
+</html>

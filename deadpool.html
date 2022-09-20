@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: #c32025;
+        }
+        .container-head{
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            border: 20px solid;
+            background: black;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mask{
+            height: 99%;
+            width: 99%;
+            background: #c32025;
+            display: flex;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: inset 19px 20px 0px white;
+        }
+        .container-left-eye{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            right: 52%;
+            top: 9%;
+            overflow: hidden;
+        }
+        .container-right-eye{
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 52%;
+            top: 9%;
+            overflow: hidden;
+        }
+        .right-eye{
+            position: absolute;
+            width: 112px;
+            height: 123px;
+            background: white;
+            border-radius: 89% 9% 27% 60%/63% 22% 70% 31%;
+            top: 39%;
+            left: 10%;
+            transform: rotate(353deg);
+        }
+        .left-eye{
+            position: absolute;
+            width: 50px;
+            height: 136px;
+            background: white;
+            right: 20%;
+            top: 42%;
+            border-radius: 72% 28% 31% 66% / 38% 6% 89% 50%;
+            transform: rotate(286deg);
+        }
+        .left-eye-contour{
+            width: 137px;
+            height: 50px;
+            background: black;
+            position: absolute;
+            right: 1%;
+            border-radius: 50%;
+            top: 45%;
+            z-index: 1;
+            transform: rotate(20deg);
+        }
+        .left-eye-patch{
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            top: 0;
+            position: absolute;
+            left: 52%;
+        }
+        .eyebrow{
+            height: 149%;
+            width: 130%;
+            position: absolute;
+            right: -10px;
+            border-radius: 50%;
+            transform: rotate(8deg);
+            border: 10px solid;
+            top: 22%;
+            box-shadow: -12px -13px 0px #454545;
+        }
+        .right-eye-contour{
+            width: 100%;
+            height: 39%;
+            border: 20px solid;
+            border-radius: 50%;
+            position: absolute;
+            top: 25%;
+            z-index: 1;
+            transform: rotate(334deg);
+            box-shadow: 20px -18px 0px #454545;
+        }
+        .top-head{
+            width: 130px;
+            height: 116px;
+            border: 10px solid;
+            border-radius: 50%;
+            position: relative;
+            top: 104px;
+            left: -22px;
+            box-shadow: inset 1px 8px 0px -5px white;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+        }
+        .shadow{
+            height: 13px;
+            width: 362px;
+            margin-top: 124px;
+            border-radius: 50%;
+            background: #00000052;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-head"></div>
+    <div class="container-head">
+        <div class="mask">
+            <div class="container-left-eye">
+                <div class="left-eye-contour">
+                    <div class="eyebrow"></div>
+                </div>
+                <div class="left-eye">
+                    <div class="left-eye-patch"></div>
+                </div>
+            </div>
+            <div class="container-right-eye">
+                <div class="right-eye-contour"></div>
+                <div class="right-eye"></div>
+            </div>
+        </div>
+    </div>
+    <div class="shadow"></div>
+</body>
+</html>
